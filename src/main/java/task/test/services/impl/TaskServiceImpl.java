@@ -1,6 +1,4 @@
 package task.test.services.impl;
-
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.core.ParameterizedTypeReference;
@@ -16,10 +14,7 @@ import task.test.services.TaskService;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
-
-
 @Service
-
 public class TaskServiceImpl implements TaskService {
     @Autowired
     private TaskMapper taskMapper;
